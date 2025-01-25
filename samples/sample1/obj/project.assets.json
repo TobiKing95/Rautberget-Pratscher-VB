@@ -1,11 +1,30 @@
 {
   "version": 3,
   "targets": {
-    "net9.0": {}
+    "net9.0": {
+      "BankAccountSytem/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "compile": {
+          "bin/placeholder/BankAccountSytem.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/BankAccountSytem.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "BankAccountSytem/1.0.0": {
+      "type": "project",
+      "path": "../../src/BankAccountSytem.csproj",
+      "msbuildProject": "../../src/BankAccountSytem.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net9.0": []
+    "net9.0": [
+      "BankAccountSytem >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "/home/markus-raudberget/.nuget/packages/": {}
@@ -13,11 +32,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/mnt/c/Users/Markus/Dropbox/Mein PC (DESKTOP-V977Q3Q)/Desktop/codingTests/c#/Rautberget-Pratscher-VB/src/BankAccountSytem.csproj",
-      "projectName": "BankAccountSytem",
-      "projectPath": "/mnt/c/Users/Markus/Dropbox/Mein PC (DESKTOP-V977Q3Q)/Desktop/codingTests/c#/Rautberget-Pratscher-VB/src/BankAccountSytem.csproj",
+      "projectUniqueName": "/mnt/c/Users/Markus/Dropbox/Mein PC (DESKTOP-V977Q3Q)/Desktop/codingTests/c#/Rautberget-Pratscher-VB/samples/sample1/sample1.csproj",
+      "projectName": "sample1",
+      "projectPath": "/mnt/c/Users/Markus/Dropbox/Mein PC (DESKTOP-V977Q3Q)/Desktop/codingTests/c#/Rautberget-Pratscher-VB/samples/sample1/sample1.csproj",
       "packagesPath": "/home/markus-raudberget/.nuget/packages/",
-      "outputPath": "/mnt/c/Users/Markus/Dropbox/Mein PC (DESKTOP-V977Q3Q)/Desktop/codingTests/c#/Rautberget-Pratscher-VB/src/obj/",
+      "outputPath": "/mnt/c/Users/Markus/Dropbox/Mein PC (DESKTOP-V977Q3Q)/Desktop/codingTests/c#/Rautberget-Pratscher-VB/samples/sample1/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/home/markus-raudberget/.nuget/NuGet/NuGet.Config"
@@ -31,7 +50,11 @@
       "frameworks": {
         "net9.0": {
           "targetAlias": "net9.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "/mnt/c/Users/Markus/Dropbox/Mein PC (DESKTOP-V977Q3Q)/Desktop/codingTests/c#/Rautberget-Pratscher-VB/src/BankAccountSytem.csproj": {
+              "projectPath": "/mnt/c/Users/Markus/Dropbox/Mein PC (DESKTOP-V977Q3Q)/Desktop/codingTests/c#/Rautberget-Pratscher-VB/src/BankAccountSytem.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
